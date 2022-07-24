@@ -1,0 +1,34 @@
+# testing our API
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/1
+ 
+###
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "tituloPosts": "Ola tudo",
+    "descriçaoPosts": "Ola tudo",
+    "conteudoPosts": "Ola tudo", 
+}
+
+###
+PATCH  http://localhost:5000/posts/5
+Content-Type: application/json
+
+{
+    "tituloPosts": "Ola tudo",
+    "descriçaoPosts": "Ola tudo",
+    "conteudoPosts": "Ola tudo",
+}
+
+###
+DELETE  http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+    "title": "Product Updated",
+    "price": 123 
+}
